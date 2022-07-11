@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 <html>
 <head>
     <title>Edit customer</title>
@@ -16,7 +18,7 @@
 <form method="post">
     <fieldset>
         <legend>Staff information</legend>
-        <table>
+        <table class="table table-dark table-striped">
             <tr>
                 <td>Name: </td>
                 <td><input type="text" name="name" id="name" value="${requestScope["staff"].getName()}"></td>
